@@ -1,0 +1,162 @@
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+.gradient-bg {
+  background: radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.15) 0, transparent 50%),
+              radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.15) 0, transparent 50%),
+              linear-gradient(135deg, #3bf6e3 0%, #8b5cf6 100%);
+}
+
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+}
+
+.dashboard-card { 
+  max-width: 580px !important;
+  margin: 50px;
+}
+
+
+.form-group, .add-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.input-field {
+  width: 100%; 
+  padding: 14px 18px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  outline: none;
+  font-size: 1rem;
+  background: #f9fafb;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #6366f1;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+  transform: translateY(-2px);
+}
+
+/* --- Buttons --- */
+.btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.submit-btn { 
+  background: linear-gradient(135deg, #25ebc3 0%, #1d4ed8 100%);
+  color: rgb(21, 21, 21); 
+  margin-top: 10px;
+  font-weight: lighter;
+}
+
+.add-btn { 
+  background: linear-gradient(135deg, #25ebc3 0%, #1d4ed8 100%);
+  color: white;
+}
+
+
+
+.logout-btn { 
+  background-color: #e68c8c; 
+  color: #ffffff; 
+  margin-top: 30px;
+}
+
+/* --- Dashboard Grid --- */
+.project-list { 
+display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%; 
+  margin-top: 20px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.item-text {
+  text-align: left; 
+  flex: 1;          
+}
+
+.project-item { 
+background: #ffffff; 
+  padding: 20px; 
+  border-radius: 16px;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Full width edukka solrom */
+  box-sizing: border-box;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  border-color: #3b82f6;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #464062;
+  margin-bottom: 25px;
+  font-family:cursive;
+}
+
+.toggle-text {
+  margin-top: 20px;
+  color: #6b7280;
+  cursor: pointer;
+  font-size:15px;
+  transition: all 0.2s ease; 
+  display: inline-block;
+}
+
+.toggle-text:hover {
+  color: #5f636a;
+  text-decoration: underline;
+  text-underline-offset: 4px; 
+}
+.proj{
+  font-weight:550;
+  color: #000000b8;
+  
+  border: #6366f1;
+  
+}
